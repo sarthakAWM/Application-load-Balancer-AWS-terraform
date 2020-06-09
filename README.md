@@ -1,3 +1,27 @@
 # Application-load-Balancer-AWS-terraform
 Full terraform code to create an application load balancer with Autoscaling group and VPC (contains private sunets).
-![alt text](http://https://www.google.com/imgres?imgurl=https%3A%2F%2Fd2i5xfuhwts0l0.cloudfront.net%2Fwp-content%2Fuploads%2F2019%2F02%2FScreen-Shot-2019-02-07-at-15.43.57.png&imgrefurl=https%3A%2F%2Fdbseer.com%2Faccess-ec2-instance-private-subnet-internet%2F&tbnid=MGLB7LSGDwxLBM&vet=12ahUKEwj49cSBn_XpAhVxTHwKHcBmBBwQMygEegUIARCvAQ..i&docid=P67svKCPCUh71M&w=1070&h=702&q=application%20load%20balancer%20and%20instances%20in%20private%20subnet&ved=2ahUKEwj49cSBn_XpAhVxTHwKHcBmBBwQMygEegUIARCvAQ)
+
+> Creates a VPC with 2 public and 2 private Subnets
+
+> Creates 2 security group one for Application Load Balancer and  One for Launch Configuration (used in instances)
+
+> Creates a launch Configuration and AutoScaling group
+
+> Creates Application Load Balancer, target group and listners
+
+
+# Given 2 types of Code 
+
+1. Modularized (preferable)
+   more systematic and standard
+   
+2. Raw 
+   easy to edit and use. 
+   
+# To apply 
+  
+1.  With modularize code go to modularizedcode/dev and run terraform plan and apply.
+
+2.  With raw code go to rawCode and run terraform plan and apply.
+
+# !!! do not forget to add credetial(access_key and secret key),region and AMI id in that region
