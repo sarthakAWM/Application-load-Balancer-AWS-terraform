@@ -25,3 +25,5 @@ Full terraform code to create an application load balancer with Autoscaling grou
 2.  With raw code go to rawCode and run terraform plan and apply.
 
 ## !!! do not forget to add credetial(access_key and secret key),region and AMI id of that region
+
+![alt text](https://github.com/sarthakAWM/Application-load-Balancer-AWS-terraform/blob/master/diagram.png?raw=true)
